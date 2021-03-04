@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/midkadev.github.io/static/css/main.b419ecd8.chunk.css",
+    "main.js": "/midkadev.github.io/static/js/main.dd42cf5c.chunk.js",
+    "main.js.map": "/midkadev.github.io/static/js/main.dd42cf5c.chunk.js.map",
+    "runtime-main.js": "/midkadev.github.io/static/js/runtime-main.6ff05ad5.js",
+    "runtime-main.js.map": "/midkadev.github.io/static/js/runtime-main.6ff05ad5.js.map",
+    "static/js/2.0c5496f9.chunk.js": "/midkadev.github.io/static/js/2.0c5496f9.chunk.js",
+    "static/js/2.0c5496f9.chunk.js.map": "/midkadev.github.io/static/js/2.0c5496f9.chunk.js.map",
+    "static/js/3.4bacd2fd.chunk.js": "/midkadev.github.io/static/js/3.4bacd2fd.chunk.js",
+    "static/js/3.4bacd2fd.chunk.js.map": "/midkadev.github.io/static/js/3.4bacd2fd.chunk.js.map",
+    "index.html": "/midkadev.github.io/index.html",
+    "static/css/main.b419ecd8.chunk.css.map": "/midkadev.github.io/static/css/main.b419ecd8.chunk.css.map",
+    "static/js/2.0c5496f9.chunk.js.LICENSE.txt": "/midkadev.github.io/static/js/2.0c5496f9.chunk.js.LICENSE.txt",
+    "static/media/logo.3d259fa9.png": "/midkadev.github.io/static/media/logo.3d259fa9.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6ff05ad5.js",
+    "static/js/2.0c5496f9.chunk.js",
+    "static/css/main.b419ecd8.chunk.css",
+    "static/js/main.dd42cf5c.chunk.js"
+  ]
+}
