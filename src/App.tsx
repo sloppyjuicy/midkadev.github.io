@@ -1,11 +1,12 @@
 import React from 'react';
 import { Header, Footer } from './components';
+import { LandingPage } from './pages';
+import './css/Pages.css';
 
 function App() {
   return (
     <div>
-      <Header />
-      <Footer />
+      <LandingPage />
     </div>
   );
 }
