@@ -59,7 +59,7 @@ interface ButtonProps {
 export const Button = styled.button<ButtonProps>`
   border-radius: ${({ bigRadius }) => (bigRadius ? '30px' : '20px')};
   background-color: ${({ primary }) => (primary ? '#E38B06' : '#000')};
-  color: ${({ primary }) => (primary ? '#000' : '#fff')};
+  color: ${({ primary }) => (primary ? '#fff' : '#000')};
   padding: ${({ big }) => (big ? '18px 30px' : '10px 28px')};
   font-size: ${({ bigFont }) => (bigFont ? '20px' : '18px')};
   outline: none;
