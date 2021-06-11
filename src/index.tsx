@@ -1,18 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { HashRouter } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 import { DefaultTheme } from './utils/themes';
+import CSSReset from './utils/styles';
+import { IconContext } from 'react-icons';
 
 ReactDOM.render(
   <React.StrictMode>
     <HashRouter>
-      <ThemeProvider theme={DefaultTheme}>
-        <App />
-      </ThemeProvider>
+      <IconContext.Provider value={{ color: '#fff' }}>
+        <ThemeProvider theme={DefaultTheme}>
+          <CSSReset />
+          <App />
+        </ThemeProvider>
+      </IconContext.Provider>
     </HashRouter>
   </React.StrictMode>,
   document.getElementById('root')

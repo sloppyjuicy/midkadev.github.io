@@ -14,6 +14,6 @@ export const DefaultTheme: Theme = {
     secondary: '#6A9EB3',
     error: '#C7634F',
     white: '#DDE6CD',
-    text: '#FFFFFF',
+    text: '#000000',
   },
 };
