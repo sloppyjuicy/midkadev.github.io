@@ -7,6 +7,7 @@ function App() {
   return (
     <div>
       <LandingPage />
+      <h1>Hello</h1>
     </div>
   );
 }
