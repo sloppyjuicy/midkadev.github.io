@@ -60,6 +60,7 @@ export const HeroTitle = styled.h1`
 
 export const HeroTitleText = styled.span`
   display: block;
+  color: magenta;
 `;
 
 export const HeroSubTitle = styled.h2`
