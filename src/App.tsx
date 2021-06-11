@@ -1,11 +1,10 @@
 import React from 'react';
-import { Header, Footer } from './components';
-import { LandingPage } from './pages';
+import { Hero } from './components';
 
 function App() {
   return (
     <div>
-      <Header />
+      <Hero />
       {/* <LandingPage /> */}
     </div>
   );
