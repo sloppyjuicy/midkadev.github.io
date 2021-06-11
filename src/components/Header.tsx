@@ -10,7 +10,10 @@ import {
   NavIcon,
   NavLogo,
   NavStyle,
-} from './../utils/styles';
+  MenuItemBtn,
+  MenuLinkBtn,
+  Button,
+} from './../styles';
 
 type HeaderProps = {};
 
@@ -60,6 +63,20 @@ export const Header: React.FC<HeaderProps> = () => {
               Projects
             </MenuLink>
           </MenuItem>
+
+          <MenuItemBtn to="#">
+            {button ? (
+              <MenuLinkBtn to="/contact">
+                <Button primary>Contact</Button>
+              </MenuLinkBtn>
+            ) : (
+              <MenuLinkBtn to="/contact">
+                <Button primary bigFont onClick={closeMenu}>
+                  Contact
+                </Button>
+              </MenuLinkBtn>
+            )}
+          </MenuItemBtn>
         </Menu>
       </NavbarContainer>
     </NavStyle>

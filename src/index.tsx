@@ -5,7 +5,7 @@ import reportWebVitals from './reportWebVitals';
 import { HashRouter } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 import { DefaultTheme } from './utils/themes';
-import CSSReset from './utils/styles';
+import { CSSReset } from './styles';
 import { IconContext } from 'react-icons';
 
 ReactDOM.render(
