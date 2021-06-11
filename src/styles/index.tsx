@@ -21,6 +21,15 @@ export {
   HeroBtn,
 } from './heroStyles';
 export {
+  WelcomeImg,
+  WelcomeContentText,
+  Img,
+  WelcomeContainer,
+  WelcomeContent,
+  WelcomeText,
+  WelcomeContentTitle,
+} from './welcomeStyles';
+export {
   Container,
   default as CSSReset,
   Button,
