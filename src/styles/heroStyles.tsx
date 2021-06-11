@@ -31,6 +31,7 @@ export const HeroContent = styled.section`
   color: #fffefe;
   @media only screen and (max-width: 375px) {
     text-align: start;
+    top: 100px;
     height: 80px;
   }
 `;
@@ -60,7 +61,7 @@ export const HeroTitle = styled.h1`
 
 export const HeroTitleText = styled.span`
   display: block;
-  color: magenta;
+  color: #e38b06;
 `;
 
 export const HeroSubTitle = styled.h2`
