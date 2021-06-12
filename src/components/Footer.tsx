@@ -16,6 +16,7 @@ import {
   FooterLink,
   FooterCopyRight,
 } from '../styles';
+import { projects } from '../utils/mocks';
 
 export const Footer = () => {
   return (
@@ -45,9 +46,9 @@ export const Footer = () => {
             </FooterLinks>
             <FooterLinks>
               <FooterLinkTitle>Projects</FooterLinkTitle>
-              <FooterLink href="https://budjetgenix.com">
-                BudjetGenix
-              </FooterLink>
+              {projects.map((pro) => {
+                return <FooterLink href={pro.link}>{pro.name}</FooterLink>;
+              })}
             </FooterLinks>
           </FooterLinksWrapper>
           <FooterLinksWrapper>

@@ -4,8 +4,10 @@ import {
   CardButtonArea,
   CardContainer,
   CardContent,
+  CardDate,
   CardDescription,
   CardImage,
+  CardSubTitle,
   CardTitle,
 } from '../styles';
 
@@ -13,29 +15,34 @@ type CardProps = {
   title?: string;
   description?: string;
   date?: string;
-  image?: {
-    uri: string;
-    alt: string;
-  };
-  version?: string;
+  imageUri?: string;
+  subTitle?: string;
+  link?: string;
 };
 
 export const Card: FC<CardProps> = ({
   title,
-  version,
+  subTitle,
   description,
   date,
-  image,
+  imageUri,
+  link,
 }) => {
   return (
     <CardContainer>
-      {image && <CardImage src={image.uri} alt={image.alt} />}
+      {imageUri && <CardImage src={imageUri} alt="Alt" />}
       <CardContent>
+        <CardDate>{date}</CardDate>
         {title && <CardTitle>{title}</CardTitle>}
+        {subTitle && <CardSubTitle>{subTitle}</CardSubTitle>}
         <CardDescription>{description}</CardDescription>
-        <CardButtonArea>
-          <CardButton>Visit Site</CardButton>
-        </CardButtonArea>
+        {link && (
+          <CardButtonArea>
+            <CardButton onClick={() => (window.location.href = link)}>
+              Visit Site
+            </CardButton>
+          </CardButtonArea>
+        )}
       </CardContent>
     </CardContainer>
   );

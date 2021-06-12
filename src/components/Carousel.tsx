@@ -1,9 +1,10 @@
 import React, { FC, useState } from 'react';
 import DCarousel from 'react-spring-3d-carousel';
 import { config, SpringConfig } from 'react-spring';
+import { Slide } from '../utils/types';
 
 type CarouselProps = {
-  slides: any[];
+  slides: Slide[];
 };
 
 export const Carousel: FC<CarouselProps> = ({ slides }) => {
@@ -25,13 +26,6 @@ export const Carousel: FC<CarouselProps> = ({ slides }) => {
       onClick: () => setState({ ...state, goToSlide: index }),
     };
   });
-
-  const onChangeInput = (e: any) => {
-    setState({
-      ...state,
-      [e.target.name]: parseInt(e.target.value, 10) || 0,
-    });
-  };
 
   let xDown: number | null = null;
   let yDown: number | null = null;

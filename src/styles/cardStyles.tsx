@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { Container } from './globalStyles';
 
 export const CardTitle = styled.h3`
   margin-bottom: 0.5rem;
@@ -8,6 +7,18 @@ export const CardTitle = styled.h3`
 export const CardImage = styled.img`
   overflow: hidden;
   height: 200px;
+`;
+
+export const CardDate = styled.p`
+  font-size: 11px;
+  font-weight: 600;
+  color: grey;
+`;
+
+export const CardSubTitle = styled.h4`
+  font-size: 12px;
+  font-weight: 600;
+  color: gray;
 `;
 
 export const CardContent = styled.div`
@@ -45,14 +56,6 @@ export const CardContainer = styled.div`
     transform: scale(1.1);
     box-shadow: 0 0 15px 0px;
   }
-`;
-
-export const CardList = styled.div`
-  width: 100vw;
-  display: grid;
-  grid-template-columns: repeat(3, 300px);
-  grid-auto-rows: minmax(150px, auto);
-  grid-gap: 20px;
 `;
 
 export const ProjectsContainer = styled.div`

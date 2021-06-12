@@ -55,7 +55,8 @@ export {
   CardButton,
   CardButtonArea,
   CardImage,
-  CardList,
+  CardDate,
+  CardSubTitle,
 } from './cardStyles';
 export {
   Container,

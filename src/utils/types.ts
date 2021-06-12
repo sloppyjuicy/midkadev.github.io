@@ -1,3 +1,5 @@
+import React from 'react';
+
 export interface Project {
   name: string;
   description: string;
@@ -5,5 +7,10 @@ export interface Project {
   last_update: string;
   version: string;
   link: string;
-  image_uri: string;
+  image_uri?: string;
+}
+
+export interface Slide {
+  key: string;
+  content: JSX.Element;
 }
