@@ -1,12 +1,17 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import { LandingPage } from './pages';
+import { Footer } from './components';
+import { LandingPage, ProjectsPage } from './pages';
 
 function App() {
   return (
-    <Switch>
-      <Route path="/" exact component={LandingPage} />
-    </Switch>
+    <>
+      <Switch>
+        <Route path="/" exact component={LandingPage} />
+        <Route path="/projects" exact component={ProjectsPage} />
+      </Switch>
+      <Footer />
+    </>
   );
 }
 

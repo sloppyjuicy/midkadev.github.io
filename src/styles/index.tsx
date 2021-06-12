@@ -47,6 +47,15 @@ export {
   FooterNewsletterTitle,
 } from './footerStyles';
 export {
+  CardContainer,
+  ProjectsContainer,
+  CardTitle,
+  CardBody,
+  CardBodyText,
+  CardDate,
+  CardHeader,
+} from './projectStyles';
+export {
   Container,
   default as CSSReset,
   Button,

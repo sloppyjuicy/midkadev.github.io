@@ -7,6 +7,7 @@ export const FooterSection = styled.section`
   align-items: center;
   color: #fff;
   background-color: #333;
+  bottom: 0;
 `;
 
 export const FooterContainer = styled(Container)`
