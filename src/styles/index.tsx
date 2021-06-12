@@ -30,6 +30,23 @@ export {
   WelcomeContentTitle,
 } from './welcomeStyles';
 export {
+  FooterSection,
+  FooterBtn,
+  FooterContainer,
+  FooterCopyRight,
+  FooterLabel,
+  FooterLink,
+  FooterLinkContainer,
+  FooterLinkTitle,
+  FooterLinks,
+  FooterLinksWrapper,
+  FooterNewsletter,
+  FooterNewsletterForm,
+  FooterNewsletterInput,
+  FooterNewsletterText,
+  FooterNewsletterTitle,
+} from './footerStyles';
+export {
   Container,
   default as CSSReset,
   Button,
