@@ -22,11 +22,11 @@ export const Hero: FC = () => {
             <HeroTitle>
               <HeroTitleText>Midka.Dev</HeroTitleText>
             </HeroTitle>
-            <HeroSubTitle>Coding Group</HeroSubTitle>
-            <HeroText>We're a coding group of 1 people :D</HeroText>
+            <HeroSubTitle>Developer</HeroSubTitle>
+            <HeroText>I'm a Full-Stack developer</HeroText>
             <HeroBtn to="/projects">
               <Button primary big bigFont bigRadius>
-                Our Projects
+                My Projects
               </Button>
             </HeroBtn>
           </HeroContentText>
