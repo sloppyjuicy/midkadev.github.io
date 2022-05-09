@@ -13,9 +13,11 @@
     "@mantine/hooks": "^4.2.4",
     "@mantine/next": "^4.2.4",
     "@react-three/fiber": "^8.0.13",
+    "framer-motion": "^6.3.3",
     "next": "12.1.6",
     "react": "18.1.0",
     "react-dom": "18.1.0",
+    "tabler-icons-react": "^1.47.0",
     "three": "^0.140.1"
   },
   "devDependencies": {
