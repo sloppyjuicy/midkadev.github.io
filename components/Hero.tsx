@@ -1,4 +1,4 @@
-import { Button, Container, Text, Title } from '@mantine/core';
+import { Anchor, Button, Container, Text, Title } from '@mantine/core';
 import { createStyles } from '@mantine/styles';
 import { motion } from 'framer-motion';
 import { ArrowDown } from 'tabler-icons-react';
@@ -12,7 +12,7 @@ const useStyles = createStyles((theme) => ({
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     backgroundImage:
-      'linear-gradient(250deg, rgba(130, 201, 30, 0) 0%, #062343 70%), url(https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1080&q=80)',
+      'linear-gradient(250deg, rgba(130, 201, 30, 0) 0%, #272926 70%), url(https://images.unsplash.com/photo-1470770841072-f978cf4d019e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8bGFuZHNjYXBlfGVufDB8fDB8fA%3D%3D&auto=format)',
     paddingTop: theme.spacing.xl * 3,
     paddingBottom: theme.spacing.xl * 3,
     minHeight: '100vh',
@@ -94,7 +94,15 @@ const useStyles = createStyles((theme) => ({
   },
 }));
 
-const texts = ['web developer', 'programmer', 'backend developer', 'student'];
+const texts = [
+  'web developer',
+  'programmer',
+  'backend guy',
+  'student',
+  'teenager',
+  'photographer',
+  'gamer',
+];
 
 const Hero = (props: Props) => {
   const { classes } = useStyles();
@@ -117,9 +125,11 @@ const Hero = (props: Props) => {
             </Title>
 
             <Text className={classes.description} mt={30}>
-              Build fully functional accessible web applications with ease –
-              Mantine includes more than 100 customizable components and hooks
-              to cover you in any situation
+              I like to build full stack applications for the internet. I&apos;m
+              a self-taught web developer and currently building{' '}
+              <Anchor href="https://ritta.fi" target="_blank">
+                Ritta
+              </Anchor>
             </Text>
 
             <Button
@@ -129,7 +139,7 @@ const Hero = (props: Props) => {
               className={classes.control}
               mt={40}
             >
-              Get started
+              Contact Me
             </Button>
             <motion.div
               transition={{
