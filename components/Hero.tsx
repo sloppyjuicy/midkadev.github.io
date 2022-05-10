@@ -73,8 +73,9 @@ const useStyles = createStyles((theme) => ({
     paddingRight: 50,
     fontFamily: `Greycliff CF, ${theme.fontFamily}`,
     fontSize: 22,
+    maxWidth: 240,
 
-    [theme.fn.smallerThan('md')]: {
+    [theme.fn.smallerThan('sm')]: {
       width: '100%',
     },
   },
@@ -88,7 +89,8 @@ const useStyles = createStyles((theme) => ({
     alignItems: 'center',
     flexDirection: 'column',
     color: theme.white,
-    [theme.fn.smallerThan('md')]: {
+
+    [theme.fn.smallerThan('sm')]: {
       display: 'none',
     },
   },
@@ -137,7 +139,7 @@ const Hero = (props: Props) => {
               gradient={{ from: 'pink', to: 'yellow' }}
               size="xl"
               className={classes.control}
-              mt={40}
+              mt={100}
             >
               Contact Me
             </Button>
